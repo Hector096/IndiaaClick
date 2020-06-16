@@ -1,0 +1,44 @@
+
+
+ 
+
+    <div id="content">
+        <div class="column-1200">
+            <span class="spacer"></span>
+            <div id="right-content" class="column-300 right"><span class="spacer-2x"></span>
+                <div class="listing padding border-light-gray white-bg">
+
+            </div>
+            </div>
+       
+            <div id="middle-content" class="column-600 right">
+                <div class="padding-half padding-offset-half padding-bottom-0">
+                    <h1 class="medium blue bold margin-bottom-0">
+                    Top 10 best Agriculture in Results</h1>
+                </div>
+    
+               	</div>
+    
+            
+            <div id="left-content" class="column-300 left" style="display: inline;">
+                <div class="padding-half padding-offset-half">
+                    <h6 class="blue ">Subcategory</h6>			
+                    <div class="padding border-light-gray white-bg">
+                        <ul id=subcategory-nav  > 
+                            <li *ngFor="let list of subcategory">
+                                    <a (click)= 'onselect(list)' >
+                                         {{list.name}} 
+                                          </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="clear"></span>
+            <span class="spacer-2x"></span>
+    
+        <span class="spacer"></span>
+    </div>
+    </div>
+
+    

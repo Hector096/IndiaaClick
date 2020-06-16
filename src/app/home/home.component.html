@@ -1,0 +1,88 @@
+
+	
+
+
+<body>
+  <!-- home header starts here -->
+  <header>			 
+    <div id="home-header" class=""  > 
+  
+    </div> 
+   </header>	
+  
+  <!-- home header ends here -->
+  
+  <!-- home quick search starts here -->
+  <div id="home-quick-search">
+    <div class="column-1200">
+      <span class="spacer-2x"></span>
+      <h1 class="medium bold blue">Quick Search Local Business Listings in India</h1>
+      <div id="qs-categories" class="padding border-light-gray white-bg">
+         <a  (click)= 'onselect(list)' class='category' *ngFor="let list of homecategory">
+           <img src="{{list.image}}" alt="Agriculture">
+           {{list.name}} 
+         </a>
+        <span class="clear"></span>
+        <span class="spacer"></span>
+        <div class="center">
+          <a class="btn-style-link blue-bg white" >View all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- home quick search ends here -->
+  <span class="spacer-2x"></span>
+
+  <div class="column-1200">
+  
+    
+      <div class="">
+        <div class="padding-top-bottom ">
+          <h3 class="medium bold blue">Recent Business Listings</h3>
+          <div class="border-light-gray white-bg padding">
+          
+          </div>
+        </div>
+      </div>
+  
+    
+      <div class="">
+        <div class="padding-top-bottom ">
+          <h3 class="medium bold blue">Recent Business Leads</h3>
+          <div class="border-light-gray white-bg padding">
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="">
+        <div class="padding-top-bottom">
+          <h3 class="medium bold blue">Recent Offers, Events & Classifieds</h3>
+          <div class="border-light-gray white-bg padding">
+            
+          </div>
+        </div>
+      </div>
+  <span class="clear"></span>
+  </div>
+  
+  <span class="spacer"></span>
+  
+  <div class="column-1200">
+    <h2 class="medium bold blue margin-bottom-0">Tell Us Your Requirements</h2>
+    <p class="gray">
+      With thousands of listed businesses and service providers, we can help you to find what you need.
+    </p>
+    <div id="home-requirement-bg" class="border-light-gray white-bg">
+      <span class="spacer-2x"></span>
+      <div class="column-600 right">
+        <div class="padding-offset">
+          <form id="requirementForm" name="requirementsForm" method="post">
+          </form>
+        </div>
+      </div>		<span class="clear"></span>
+      <span class="spacer-2x"></span>
+    </div>
+  </div>
+</body>
